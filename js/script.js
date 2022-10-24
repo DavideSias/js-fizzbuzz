@@ -17,11 +17,11 @@ const eleSquares = document.querySelector('.squares');
 
 for (i = 1; i <= 100; i++){
 
-    if((i % 3 == 0) && (i % 5 == 0)){
+    if((i % 3 === 0) && (i % 5 === 0)){
         eleSquares.innerHTML += `<div class="box red">FizzBuzz</div>`;
-    } else if (i % 3 == 0){
+    } else if (i % 3 === 0){
         eleSquares.innerHTML += `<div class="box green">Fizz</div>`;
-    } else if (i % 5 == 0){
+    } else if (i % 5 === 0){
         eleSquares.innerHTML += `<div class="box yellow">Buzz</div>`;
     } else {
         eleSquares.innerHTML += `<div class="box">${i}</div>`;
