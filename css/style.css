@@ -3,3 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    font-family: sans-serif;
+}
+
+h1{
+    margin: 2rem;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.squares{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.box{
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}

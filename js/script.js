@@ -13,16 +13,17 @@ ELSE IF eleFizz === 0 allora stampare 'Fizz'
 ELSE IF eleBuzz === 0 allora stampare 'Buzz'
 */
 
+const eleSquares = document.querySelector('.squares');
 
 for (i = 1; i <= 100; i++){
-  
+
     if((i % 3 == 0) && (i % 5 == 0)){
-        console.log('FizzBuzz')
+        eleSquares.innerHTML += `<div class="box red">FizzBuzz</div>`;
     } else if (i % 3 == 0){
-        console.log('Fizz');
+        eleSquares.innerHTML += `<div class="box green">Fizz</div>`;
     } else if (i % 5 == 0){
-        console.log('Buzz');
+        eleSquares.innerHTML += `<div class="box yellow">Buzz</div>`;
     } else {
-        console.log(i);
+        eleSquares.innerHTML += `<div class="box">${i}</div>`;
     }
 }
