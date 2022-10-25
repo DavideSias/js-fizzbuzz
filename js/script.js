@@ -15,7 +15,7 @@ ELSE IF eleBuzz === 0 allora stampare 'Buzz'
 
 const eleSquares = document.querySelector('.squares');
 
-for (i = 1; i <= 100; i++){
+for (let i = 1; i <= 100; i++){
 
     if((i % 3 === 0) && (i % 5 === 0)){
         eleSquares.innerHTML += `<div class="box red">FizzBuzz</div>`;
